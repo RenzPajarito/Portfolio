@@ -77,6 +77,20 @@ header nav a:hover:after {
 	width: 100%;
 }
 
+header .div-nav {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 70px;
+	height: 70px;
+	background: url(https://github.com/JhaymarkPascual/manwithbgg/blob/main/icons8-hamburger-menu-30.png?raw=true) no-repeat;
+	background-size: 30px;
+	background-position: center;
+	filter: invert(1);
+	cursor: pointer;
+	visibility: hidden;
+}
+
 #mainPage {
 	position: relative;
 	width: 100%;
@@ -160,4 +174,126 @@ header nav a:hover:after {
 	background: url(https://github.com/JhaymarkPascual/manwithbgg/blob/main/christopher-campbell-Xo4YvBp6IBM-unsplash-removebg-preview.png?raw=true) no-repeat;
 	background-position: center;
 	background-size: cover;
+}
+
+@media only screen and (max-width: 1075px) {
+	#mainPage .main-left-side h1 {
+		font-size: 3em;
+	}
+
+	#mainPage .main-left-side h3 {
+		font-size: 1.3em;
+	}
+
+	#mainPage .main-left-side p {
+		font-size: 14px;
+	}
+
+	#mainPage .main-right-side {
+		width: 500px;
+		height: 480px;
+	}
+}
+
+@media only screen and (max-width:  770px) {
+	#mainPage .main-left-side {
+		left: 10px;
+	}
+
+	#mainPage .main-left-side h1 {
+		font-size: 2.5em;
+	}
+
+	#mainPage .main-left-side h3 {
+		font-size: 1em;
+	}
+
+	#mainPage .main-left-side p {
+		font-size: 14px;
+		padding-right: 120px;
+	}
+
+	#mainPage .main-right-side {
+		width: 340px;
+		height: 450px;
+	}
+
+	#mainPage .main-left-side a {
+		padding: 5px 12px;
+	}
+}
+
+@media only screen and (max-width:  600px) {
+	header nav {
+		max-width: 380px;
+		margin-left: 20px;
+	}
+
+	header nav a {
+		font-size: 13px;
+	}
+
+	#mainPage .main-left-side h1 {
+		font-size: 2.8em;
+	}
+
+	#mainPage .main-left-side h3 {
+		font-size: 1.5em;
+	}
+
+	#mainPage .main-left-side p {
+		font-size: 16px;
+		padding: auto;
+	}
+
+	#mainPage .main-right-side {
+		display: none;
+	}
+}
+
+@media only screen and (max-width:  310px) {
+	section {
+		width: 100%;
+		height: 100vh;
+	}
+
+	header nav {
+		display: none;
+	}
+
+	header .div-nav {
+		background-size: 55px;
+		visibility: visible;
+	}
+
+	#mainPage .main-left-side h1 {
+		font-size: 2.8em;
+	}
+
+	#mainPage .main-left-side h3 {
+		font-size: 1.5em;
+	}
+
+	#mainPage .main-left-side h4 {
+		font-size: 2em;
+	}
+
+	#mainPage .main-left-side p {
+		font-size: 25px;
+	}
+
+	#mainPage .main-left-side a {
+		padding: 13px 30px;
+		font-size: 20px;
+	}
+
+	#mainPage .main-right-side {
+		display: block;
+		top: 700px;
+		left: 130px;
+		width: 280px;
+		height: 280px;
+		border-radius: 50%;
+		border: 1px solid #ffff;
+	}
 }
